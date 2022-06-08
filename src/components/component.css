@@ -4,6 +4,6 @@
     align-items:center; 
 }
 .container{
-    min-width: 80vw;
-    
+    width: 1000px;
+    height: 1000px;
 }
