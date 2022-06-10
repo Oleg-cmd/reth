@@ -1,30 +1,23 @@
-import { Canvas } from '@react-three/fiber'
-import { Suspense } from 'react'
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { Suspense, lazy } from 'react'
 
 import './component.css'
-const Scene = () => {
-    const gltf = useLoader(GLTFLoader, './lieutenantHead.gltf')
-    return (
-        <>
-            <primitive object={gltf.scene} scale={3} position={[0, 0, 0]} />
-        </>
-    )
-}
+
+import Loader from '../components/ModelLoader'
+
+const LazyModel = lazy(() => import('./Model'))
 
 export const Component = () => {
     return (
         <div className="component">
             <div className="container">
-                <Canvas>
+                {/* <Canvas>
                     <Suspense fallback={false}>
                         <Scene />
                         <OrbitControls />
                         <Environment preset="park" background />
                     </Suspense>
-                </Canvas>
+                </Canvas> */}
+                <LazyModel />
             </div>
         </div>
     )
