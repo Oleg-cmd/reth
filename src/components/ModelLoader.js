@@ -13,15 +13,7 @@ export const ModelSpinner = () => (
 )
 
 export const ModelContainer = forwardRef(({ children }, ref) => (
-    <Box
-        ref={ref}
-        className="model"
-        m="auto"
-        mt={['-20px', '-60px', '-120px']}
-        mb={['-40px', '-140px', '-200px']}
-        w={[280, 480, 640]}
-        h={[280, 480, 640]}
-        position="relative">
+    <Box ref={ref} className="model" position="relative">
         {children}
     </Box>
 ))
