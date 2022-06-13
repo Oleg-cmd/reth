@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
-import { Box, Spinner } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
-export const ModelSpinner = () => <Spinner size="sm" position="relative" />
+import './spinner.css'
 
 export const ModelContainer = forwardRef(({ children }, ref) => (
     <Box
@@ -15,17 +15,11 @@ export const ModelContainer = forwardRef(({ children }, ref) => (
     </Box>
 ))
 
-export const SpinnerContainer = forwardRef(({ children }, ref) => (
-    <div ref={ref} className="spinner-container">
-        {children}
-    </div>
-))
-
 const Loader = () => {
     return (
-        <SpinnerContainer>
-            <ModelSpinner />
-        </SpinnerContainer>
+        <ModelContainer>
+            <div className="lds-dual-ring"></div>
+        </ModelContainer>
     )
 }
 

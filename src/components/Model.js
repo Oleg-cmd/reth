@@ -47,6 +47,7 @@ const Model = () => {
                 antialias: true,
                 alpha: true,
             })
+
             renderer.setPixelRatio(window.devicePixelRatio)
             renderer.setSize(scW, scH)
             renderer.outputEncoding = THREE.sRGBEncoding
@@ -81,17 +82,16 @@ const Model = () => {
                 receiveShadow: false,
                 castShadow: false,
             }).then(() => {
-                animate()
                 setLoading(false)
+                animate()
             })
 
             let req = null
             let frame = 0
+
             const animate = () => {
                 req = requestAnimationFrame(animate)
-
                 frame = frame <= 100 ? frame + 1 : frame
-
                 if (frame <= 100) {
                     const p = initialCameraPosition
                     const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20
@@ -105,7 +105,6 @@ const Model = () => {
                 } else {
                     controls.update()
                 }
-
                 renderer.render(scene, camera)
             }
 
@@ -115,7 +114,7 @@ const Model = () => {
                 renderer.dispose()
             }
         }
-    }, [])
+    }, [0])
 
     useEffect(() => {
         window.addEventListener('resize', handleWindowResize, false)
