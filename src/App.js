@@ -3,6 +3,7 @@ import './App.css'
 
 import { Helmet } from 'react-helmet'
 
+import { Header } from './components/Header'
 import { Component } from './components/Component'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <meta name="document-class" content="Published" />
             </Helmet>
             <div className="App-header">
+                <Header />
                 <Component />
             </div>
         </div>
