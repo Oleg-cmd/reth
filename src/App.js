@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Header } from './components/Header'
 import { Component } from './components/Component'
+import { Footer } from './components/Footer'
 
 function App() {
     return (
@@ -34,6 +35,7 @@ function App() {
             <div className="App-header">
                 <Header />
                 <Component />
+                <Footer />
             </div>
         </div>
     )
