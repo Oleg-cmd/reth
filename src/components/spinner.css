@@ -22,4 +22,17 @@
       transform: rotate(360deg);
     }
   }
-  
+
+.spinner-container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 35%;
+  text-align: center;
+}

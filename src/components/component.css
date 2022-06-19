@@ -14,7 +14,31 @@
     width: 768px;
     height: 768px;
     display: flex;
+    flex-wrap: wrap;
     align-items:center;
     justify-content:center;
 }
+.module{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 
+}
+.module-text{
+    font-size: 28px;
+    color: rgb(192, 192, 192);
+    text-align: center;
+    margin-bottom: 10%;
+    white-space: nowrap;
+}
+.module-button{
+    border-radius: 10px;
+    background-color: rgb(230, 96, 96);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.module-button div{
+    color: rgb(192, 192, 192);
+}

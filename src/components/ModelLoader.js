@@ -18,7 +18,9 @@ export const ModelContainer = forwardRef(({ children }, ref) => (
 const Loader = () => {
     return (
         <ModelContainer>
-            <div className="lds-dual-ring"></div>
+            <div className="spinner-container">
+                <div className="lds-dual-ring"></div>
+            </div>
         </ModelContainer>
     )
 }
