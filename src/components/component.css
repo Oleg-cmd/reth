@@ -29,25 +29,53 @@
     font-size: 28px;
     color: rgb(192, 192, 192);
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     white-space: nowrap;
 }
 .module-button{
-    border-radius: 10px;
-    background-color: rgb(132, 90, 136);
-    width:25%;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5%;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
-.module-button div{
-    color: rgb(192, 192, 192);
-}
+
+.module-button:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+ }
+
+
 .module-future{
+    margin-top: 6%;
     white-space: nowrap;
 }
 .future-topic{
+    color: rgb(192, 192, 192);
     font-size:28px;
     margin-bottom: 20px;
 }
@@ -59,5 +87,10 @@
     height: 100px;
 }
 .future-ideas div{
+    color: rgb(192, 192, 192);
+    font-size: 22px;
+}
+.future-ideas div span{
+    color: #e74c3c;
     font-size: 22px;
 }

@@ -4,23 +4,18 @@ export const Module = () => {
             <div className="module-text">
                 This block is used to something. Ps do not click (not working)
             </div>
-            <div className="module-button">
-                <div>Spin</div>
-            </div>
+            <div className="module-button">Spin</div>
             <div className="module-future">
                 <div className="future-topic">Ideas</div>
                 <div className="future-ideas">
                     <div>
-                        <span style={{ color: 'red' }}>1</span>) auto import{' '}
-                        <span style={{ color: 'aqua' }}>3</span>d modeles
+                        <span>1</span>. auto import 3d modeles
                     </div>
                     <div>
-                        <span style={{ color: 'red' }}>2</span>) example of{' '}
-                        <span style={{ color: 'aqua' }}>3</span>d market
+                        <span>2</span>. example of 3d market
                     </div>
                     <div>
-                        <span style={{ color: 'red' }}>3</span>) practice with{' '}
-                        <span style={{ color: 'aqua' }}>3</span>d
+                        <span>3</span>. practice with 3d
                     </div>
                 </div>
             </div>

@@ -28,7 +28,10 @@
     margin-bottom: 5%;
 }
 .footer-text{
+    color: #e74d3c8f;
     text-align: left;
     font-size: 32px;
     white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
