@@ -9,13 +9,13 @@ export const Module = () => {
                 <div className="future-topic">Ideas</div>
                 <div className="future-ideas">
                     <div>
-                        <span>1</span>. auto import <h5>3d</h5> modeles
+                        <span>1</span>. auto import 3d modeles
                     </div>
                     <div>
-                        <span>2</span>. example of <h3>3d</h3> market
+                        <span>2</span>. example of 3d market
                     </div>
                     <div>
-                        <span>3</span>. practice with <h3>3d</h3>
+                        <span>3</span>. practice with 3d
                     </div>
                 </div>
             </div>
