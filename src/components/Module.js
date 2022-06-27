@@ -2,7 +2,7 @@ export const Module = () => {
     return (
         <div className="module">
             <div className="module-text">
-                This block is used to something. Ps do not click (not working)
+                This block is used to something...
             </div>
             <div className="module-button">Spin</div>
             <div className="module-form">
