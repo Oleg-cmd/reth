@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 import { Header } from './components/Header'
 import { Component } from './components/Component'
 import { Footer } from './components/Footer'
-
+// 4 and i am crazy and the world will be fucking shocked
 function App() {
     return (
         <div className="App">

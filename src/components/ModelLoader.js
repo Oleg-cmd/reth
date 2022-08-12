@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import { Box } from '@chakra-ui/react'
 
 import './spinner.css'
-
+// 2 one, i finally bought macbook and im fucking proud of my life
 export const ModelContainer = forwardRef(({ children }, ref) => (
     <Box
         ref={ref}

@@ -9,7 +9,7 @@ import Loader from './ModelLoader'
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
-
+// actually its my rep and my little project so i can do watever i want...
 const Model = () => {
     const refContainer = useRef()
     const [loading, setLoading] = useState(true)
