@@ -1,32 +1,14 @@
 export const Module = () => {
     return (
-        <div className="module">
-            <div className="module-text">
+        <div className='module'>
+            <div className='module-text'>
                 This block is used to something...
             </div>
-            <div className="module-button">Spin</div>
-            <div className="module-form">
-                <div className="module-form-input">
-                    <input
-                        type="text"
-                        placeholder="Send to author some questions"
-                    />
-                </div>
-                <div className="module-button">Send</div>
-            </div>
-            <div className="module-future">
-                <div className="future-topic">Ideas</div>
-                <div className="future-ideas">
-                    <div>
-                        <span>1</span>. auto import 3d modeles
-                    </div>
-                    <div>
-                        <span>2</span>. example of 3d market
-                    </div>
-                    <div>
-                        <span>3</span>. practice with 3d
-                    </div>
-                </div>
+            {/* <div className='module-button'>Spin</div> */}
+            <div className='module-form'>
+                <a className='module-button' href='https://t.me/olevegic'>
+                    Telegram
+                </a>
             </div>
         </div>
     )

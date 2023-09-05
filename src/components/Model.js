@@ -50,13 +50,11 @@ const Model = () => {
 
             renderer.setPixelRatio(window.devicePixelRatio)
             renderer.setSize(scW, scH)
-            renderer.outputEncoding = THREE.sRGBEncoding
+            renderer.outputColorSpace = THREE.SRGBColorSpace
             container.appendChild(renderer.domElement)
             setRenderer(renderer)
 
-            // 640 -> 240
-            // 8   -> 6
-            const scale = scH * 0.005 + 4.8
+            const scale = scH * 0.0008 + 6.2
             const camera = new THREE.OrthographicCamera(
                 -scale,
                 scale,
